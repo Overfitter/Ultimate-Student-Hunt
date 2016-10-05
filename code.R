@@ -527,5 +527,5 @@
  +# providing appropriate weightage
  +
  +pred_ens = (2.5*gbm$Footfall + 7.5*combined_net_xgb_other_114.13$Footfall)/10
- +mysolution = data.frame( ID = Test$ID, Footfall = pred_ens)
- +write.csv(mysolution, file = "final_solution.csv", row.names = FALSE)
+ +final_prediction = data.frame( ID = Test$ID, Footfall = pred_ens)
+ +write.csv(final_prediction, file = "final_prediction.csv", row.names = FALSE)
